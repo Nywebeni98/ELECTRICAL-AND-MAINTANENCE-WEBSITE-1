@@ -1,0 +1,45 @@
+/* Container for all products */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    /* Remove flex-wrap */
+}
+
+/* Individual product styling */
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Ensure images fit within the product container */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button styling */
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Optional: Media queries for responsive design */
+@media (max-width: 1200px) {
+    .product {
+        width: 45%; /* Adjust width for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
